@@ -7,3 +7,8 @@ __pycache__/
 venv/
 
 node_modules/
+firebase_key.json
+venv/
+__pycache__/
+*.pyc
+.env
