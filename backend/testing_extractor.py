@@ -21,3 +21,9 @@ data = log.model_dump()
 patient_id = "test_patient_001" # temp, until frontend integration
 data["patientId"] = patient_id
 data["timestamp"] = datetime.now().isoformat()
+
+# ip change later ig?
+response = requests.post(
+    "http://127.0.0.1:5000/save-log",
+    json=data
+)
