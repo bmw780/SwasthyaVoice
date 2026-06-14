@@ -117,7 +117,7 @@ def get_logs(patient_id):
     docs = (
         db.collection("health_logs")
         .where("patientId", "==", patient_id)
-        .order_by("timestamp", direction=firestore.Query.DESCENDING)
+        # .porder_by("timestamp", direction=firestore.Query.DESCENDING)
         .stream()
     )
     logs = []

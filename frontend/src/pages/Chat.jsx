@@ -204,7 +204,7 @@ function Chat() {
         <div className="min-h-screen bg-gray-100 flex flex-col lg:flex-row gap-4 p-4">
 
             {/* Chat Panel */}
-            <div className="w-full lg:w-[420px] lg:mx-auto h-[92vh] bg-white rounded-2xl shadow-xl flex flex-col overflow-hidden">
+            <div className="w-full lg:w-105 lg:mx-auto h-[92vh] bg-white rounded-2xl shadow-xl flex flex-col overflow-hidden">
 
                 {/* Header */}
                 <div className="bg-green-600 text-white p-4 flex items-center justify-between">
