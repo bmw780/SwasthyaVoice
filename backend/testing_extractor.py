@@ -1,7 +1,9 @@
 
-# Manual testing of ai parsing until stt is implemented
+## this entire file can be discarded
 
-import requests
+# Manual testing of ai parsing until stt is implemented
+import json
+# import requests
 from datetime import datetime
 from extractor import extract_health_log
 
@@ -22,8 +24,10 @@ patient_id = "test_patient_001" # temp, until frontend integration
 data["patientId"] = patient_id
 data["timestamp"] = datetime.now().isoformat()
 
-# ip change later ig?
-response = requests.post(
-    "http://127.0.0.1:5000/save-log",
-    json=data
-)
+print(data)
+print(json.dumps(data, indent=2))
+# # ip change later ig?
+# response = requests.post(
+#     "http://127.0.0.1:5000/save-log",
+#     json=data
+# )

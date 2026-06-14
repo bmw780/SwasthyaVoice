@@ -26,12 +26,12 @@ function Login() {
     useEffect(()=>{
         auth.onAuthStateChanged(function(user){
             if(user){
-                navigate("home")
+                navigate("/home")
             } else{
-               console("user not logged in")
+               console.log("user not logged in")
             }
         })
-    })
+    }, [])
 
     return (
         <div className="flex bg-blue-950 justify-center items-center p-10 h-screen relative">

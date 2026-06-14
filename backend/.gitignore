@@ -4,3 +4,4 @@ backend/firebase_key.json
 venv/
 __pycache__/
 node_modules/
+testing_extractor.py
